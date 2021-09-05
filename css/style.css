@@ -221,7 +221,7 @@ main{
 
 #conteudoVisual{
     width: 1200px;
-    height: 650px;
+    height: 750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -231,6 +231,7 @@ main{
     height: 325px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     display: flex;
     align-items: center;
 }
@@ -306,7 +307,221 @@ main{
 #divCSS{
     width: 1200px;
     height: 325px;
-    background-color: dodgerblue;
+    /*border-top: 10px solid #13293d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+#textoCSS{
+    width: 750px;
+    height: 280px;
+    box-sizing: border-box;
+    border-left: 10px solid #13293d;
+    border-bottom: 5px solid #13293d;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 10px;
+    margin-left: 40px;
+    font-family: verdana;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+#circuloCSS{
+    width: 300px;
+    height: 300px;
+    background-color: #e8f1f2;
+    border: 10px solid #13293d;
+    color: #13293d;
+    border-radius: 200px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 110px;
+    font-family: verdana;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#spanCSS{
+    font-size: 2.8em;
+}
+
+#circuloCSS:hover{
+    border: 10px solid #e8f1f2;
+    color: #e8f1f2;
+    background-color: #13293d;
+}
+
+#circuloCSS:hover > #codigoCSS{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+#codigoCSS{
+    width: 760px;
+    height: 280px;
+    box-sizing: border-box;
+    border-left: 10px solid #13293d;
+    border-bottom: 5px solid #13293d;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #13293d;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    margin-left: -790px;
+    margin-top: -164px;
+    font-family: verdana;
+    font-size: 1.2em;
+    padding: 20px;
+    color: #e8f1f2;
+    position: absolute;
+}
+
+/*Estilização do terceiro banner*/
+
+#divBanner3{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-top: 3px solid #13293d;
+    border-bottom: 3px solid #13293d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilização do conteudo principal*/
+
+#conteudoPrincipal{
+    width: 1200px;
+    height: 1950px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.programacao{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #13293d;
+}
+
+.programacaoFim{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.informacoes{
+    width: 450px;
+    height: 320px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    border: 5px solid #13293d;
+    border-radius: 30px;
+    font-family: verdana;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.circuloNome{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    border-radius: 200px;
+    border: 5px solid #13293d;
+    color: #13293d;
+    text-align: center;
+    font-family: verdana;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding-top: 110px;
+}
+
+.spanNome{
+    font-size: 2.8em;
+}
+
+.programas{
+    width: 370px;
+    height: 300px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    border: 5px solid #13293d;
+    border-radius: 30px;
+}
+
+.titulo{
+    width: 100%;
+    height: 50px;
+    background-color: #13293d;
+    color: #e8f1f2;
+    font-family: verdana;
+    font-size: 1.2em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.lista{
+    width: 100%;
+    height: 240px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.itemLista{
+    width: 300px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    padding-top: 20px;
+    font-size: 1.2em;
+    font-family: verdana;
+}
+
+/*Estilização banner4*/
+
+#divBanner4{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-top: 3px solid #13293d;
+    border-bottom: 3px solid #13293d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
