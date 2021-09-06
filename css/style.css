@@ -5,6 +5,11 @@
 
 /*Estilização do cabeçalho*/
 
+a{
+    text-decoration: none;
+    color: #13293d;
+}
+
 header{
     width: 100%;
     height: 90px;
@@ -63,13 +68,112 @@ header{
     text-align: center;
     padding-top: 10px;
     background-color: #e8f1f2;
-    color: black;
+    color: #13293d;
 }
 
 .itemListaMenu:hover{
     background-color: #13293d;
     cursor: pointer;
     color: #e8f1f2;
+}
+
+.itemListaMenuVisual:hover{
+    background-color: #13293d;
+    cursor: pointer;
+    color: #e8f1f2;
+}
+
+.itemListaMenuVisual:hover > #subMenuVisual{
+    opacity: 1;
+    visibility: visible;
+}
+
+.itemListaMenuVisual{
+    width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    font-family: verdana;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #e8f1f2;
+    color: #13293d;
+}
+
+#subMenuVisual{
+    width: 144px;
+    height: 83px;
+    margin-top: -28px;
+    background-color: #13293d;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid #13293d;
+    border-right: 2px solid #13293d;
+    border-bottom: 1px solid #13293d;
+}
+
+.itemListaSubMenu{
+    width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: verdana;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #e8f1f2;
+    color: #13293d;
+}
+
+.itemListaSubMenu:hover{
+    background-color: #13293d;
+    cursor: pointer;
+    color: #e8f1f2;
+}
+
+#subMenuLinguagem{
+    width: 144px;
+    height: 203px;
+    margin-top: -28px;
+    background-color: #13293d;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid #13293d;
+    border-right: 2px solid #13293d;
+    border-bottom: 1px solid #13293d;
+}
+
+.itemListaMenuLinguagem{
+    width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    font-family: verdana;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #e8f1f2;
+    color: #13293d;
+}
+
+.itemListaMenuLinguagem:hover{
+    background-color: #13293d;
+    cursor: pointer;
+    color: #e8f1f2;
+}
+
+.itemListaMenuLinguagem:hover > #subMenuLinguagem {
+    opacity: 1;
+    visibility: visible;
 }
 
 #divRedesSociais{
@@ -127,7 +231,7 @@ header{
 
 main{
     width: 100%;
-    height: 5000px;
+    height: 6050px;
     background-color: #e8f1f2;
     margin-left: auto;
     margin-right: auto;
@@ -413,7 +517,7 @@ main{
     margin-right: auto;
 }
 
-.programacao{
+#programacao{
     width: 1200px;
     height: 340px;
     display: flex;
@@ -423,7 +527,37 @@ main{
     border-bottom: 5px solid #13293d;
 }
 
-.programacaoFim{
+#programacao2{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #13293d;
+}
+
+#programacao3{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #13293d;
+}
+
+#programacao4{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #13293d;
+}
+
+#programacaoFim{
     width: 1200px;
     height: 340px;
     display: flex;
@@ -521,6 +655,73 @@ main{
     justify-content: center;
 }
 
+#conteudoDevelopers{
+    width: 1200px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e8f1f2;
+}
+
+.linha{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.circuloDev{
+    width: 305px;
+    height: 305px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    border-radius: 200px;
+    border: 3px solid #13293d;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.circuloDev:hover > .textoImagem{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+.textoImagem{
+    width: 400px;
+    height: 400px;
+    margin-top: -350px;
+    margin-left: -50px;
+    border-radius: 20px;
+    border: 3px solid #13293d;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #e8f1f2;
+    color: #13293d;
+    position: absolute;
+    font-family: verdana;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #13293d;
+    text-align: center;
+    color: #e8f1f2;
+    font-family: verdana;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 

@@ -15,10 +15,25 @@
                 </div>
                 <div id="menu"> <!--Seção do menu-->
                     <ul id="listaMenu"> <!--Lista do menu-->
-                        <li class="itemListaMenu"> INFORMAÇÕES </li>
-                        <li class="itemListaMenu"> VISUAL </li>
-                        <li class="itemListaMenu"> LINGUAGENS </li>
-                        <li class="itemListaMenu"> DEVELOPERS </li>
+                        <a href="#conteudo"> <li class="itemListaMenu"> INFORMAÇÕES </li> </a>
+                        <li class="itemListaMenuVisual"> VISUAL 
+                        <div id="subMenuVisual">
+                            <ul class="ListaSubMenu">
+                                <a href="#conteudoVisual"><li class="itemListaSubMenu"> HTML </li></a>
+                                <a href="#divCSS"><li class="itemListaSubMenu"> CSS </li> </a>
+                            </ul>
+                        </div></li>
+                        <li class="itemListaMenuLinguagem"> LINGUAGENS
+                        <div id="subMenuLinguagem">
+                            <ul class="listaSubMenu">
+                                <a href="#programacao"><li class="itemListaSubMenu"> JAVA </li></a>
+                                <a href="#programacao2"><li class="itemListaSubMenu"> PYTHON </li></a>
+                                <a href="#programacao3"><li class="itemListaSubMenu"> JAVASCRIPT</li></a>
+                                <a href="#programacao4"><li class="itemListaSubMenu"> PHP </li></a>
+                                <a href="#programacaoFim"><li class="itemListaSubMenu"> C </li></a>
+                            </ul> 
+                        </div></li>
+                        <a href="#conteudoDevelopers"><li class="itemListaMenu"> DEVELOPERS </li></a>
                     </ul>
                 </div>
                 <div id="divRedesSociais">
@@ -118,7 +133,7 @@
             
             </div>
             <div id="conteudoPrincipal"> 
-                <div class="programacao"> <!-- Seção JAVA -->
+                <div id="programacao"> <!-- Seção JAVA -->
                     <div class="informacoes">
                         Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual.
                     </div>
@@ -137,7 +152,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="programacao"> <!-- Seção Python -->
+                <div id="programacao2"> <!-- Seção Python -->
                     <div class="programas">
                         <div class="titulo"> Softwares desenvolvidos em PY </div>
                         <ul class="lista">
@@ -156,7 +171,7 @@
                         Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem, como um todo, não é formalmente especificada.
                     </div>
                 </div>
-                <div class="programacao"> <!-- Seção JavaScript -->
+                <div id="programacao3"> <!-- Seção JavaScript -->
                     <div class="informacoes">
                         JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. 
                     </div>
@@ -175,7 +190,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="programacao"> <!-- Seção PHP -->
+                <div id="programacao4"> <!-- Seção PHP -->
                     <div class="programas">
                         <div class="titulo"> Softwares desenvolvidos em PHP </div>
                         <ul class="lista">
@@ -194,7 +209,7 @@
                         PHP (um acrônimo recursivo para "Hypertext Preprocessor", originalmente Personal Home Page) é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando o uso de arquivos externos para processamentos de dados.
                     </div>
                 </div>
-                <div class="programacaoFim"> <!-- Seção C -->
+                <div id="programacaoFim"> <!-- Seção C -->
                     <div class="informacoes">
                         C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie para desenvolvimento do sistema operacional Unix.
                         C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. 
@@ -219,11 +234,68 @@
             
             </div>
             <div id="conteudoDevelopers">
-            
+                <div class="linha">
+                    <div class="circuloDev">
+                        <img src="img/AlanMathinson.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Alan Mathison Turing </h1>
+                            <br>
+                            <br>
+                             Foi o criador da máquina de Turing e, no seu tempo, na segunda guerra mundial, foi o responsável por decifrar as mensagem encriptadas dos alemães. É um dos grandes pioneiros da Inteligência Artificial que, hoje em dia, cada vez mais está na moda.
+                        </div>
+                    </div>
+                    <div class="circuloDev">
+                        <img src="img/LinusTorvalds.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Linus Torvalds </h1>
+                            <br>
+                            <br>
+                             Um nome bem mais conhecido, pois é o criador do Linux. Linus escreveu o código kernel Linux, aproximadamente 2%, e o sistema de controle de revisão Git.
+                        </div>
+                    </div>
+                    <div class="circuloDev">
+                        <img src="img/BjarneStroustrup.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Bjarne Stroustrup </h1>
+                            <br>
+                            <br>
+                             É dinamarques e, é conhecido como o pai da linguagem C++. Ele próprio admitiu que inventou o C++, escreveu as definições iniciais e produziu a primeira implementação. Escolheu e formulou os critérios de projecção da linguagem, desenhou todas as facilidades principais e foi responsável pelo processo de propostas de extensão no comité de padrões de C++.
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="circuloDev">
+                        <img src="img/TimBernersLee.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Tim Barners Lee </h1>
+                            <br>
+                            <br>
+                             Talvez pouco conhecido mas, a sua criação é bem conhecida, o World Wide Web (WWW). Foi o primeiro a conseguir implementar com sucesso a comunicação entre um cliente HTTP e um servidor através da internet. Atualmente é director do W3C.
+                        </div>
+                    </div>
+                    <div class="circuloDev">
+                        <img src="img/BillGatesJune.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Bill Gates June </h1>
+                            <br>
+                            <br>
+                             Dispensa introduções. É só o programador mais rico do mundo que desenvolveu um dos softwares mais utilizados também pelo mundo fora. Foi um dos fundadores da Microsoft.
+                        </div>
+                    </div>
+                    <div class="circuloDev">
+                        <img src="img/briankernighan.jpg" class="img">
+                        <div class="textoImagem">
+                            <h1> Brian Kernighan </h1>
+                            <br>
+                            <br>
+                             Contribuindo para o desenvolvimento da linguagem de programação AWK (uma linguagem que no futuro veio a ser a base do Perl e Lua), Brian venceu vários prémios ao longo da sua carreira e foi o autor do primeiro livro sobre a linguagem C.
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
-        
+            <span> Copyright &copy; 2021 | Welington Pincer </span>
         </footer>
     </body>
 </html>
